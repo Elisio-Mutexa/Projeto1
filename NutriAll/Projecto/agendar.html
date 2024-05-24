@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-mz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar Serviço - NutriAll</title>
+  <link rel="stylesheet" href="css/agendar.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <a href="index.html">NutriAll</a>
+        </div>
+        <ul class="ul">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="index.html#servico">Serviços</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="menu-icon">
+          <img src="img/menu.png" alt="Menu Icon">
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h2>Agendar Serviços da NutriAll</h2>
+      <form id="agendamentoForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="service">Serviço:</label>
+        <select id="service" name="service" required>
+          <option value="">Selecione um serviço</option>
+          <option value="consultoria">Consultoria Agrícola</option>
+          <option value="venda_insumos">Venda de Insumos</option>
+          <option value="suporte_tecnico">Suporte Técnico</option>
+        </select>
+
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Hora:</label>
+        <input type="time" id="time" name="time" required>
+
+        <button type="submit">Agendar</button>
+      </form>
+      <p id="responseMessage"></p>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Elisio Mutexa. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
